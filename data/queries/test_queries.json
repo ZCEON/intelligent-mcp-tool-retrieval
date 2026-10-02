@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q001",
+    "query": "I want to refund order 12345",
+    "expected_tools": ["refund_order"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q002",
+    "query": "Please cancel order 54321",
+    "expected_tools": ["cancel_order"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q003",
+    "query": "Can you show me the details of order 12345?",
+    "expected_tools": ["get_order"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q004",
+    "query": "I need to update the delivery address for my order",
+    "expected_tools": ["update_order"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q005",
+    "query": "What products are included in order 12345?",
+    "expected_tools": ["get_order_items"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q006",
+    "query": "What is the current status of order 12345?",
+    "expected_tools": ["get_order"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q007",
+    "query": "Find all orders belonging to customer C100",
+    "expected_tools": ["get_customer_orders"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q008",
+    "query": "The customer wants their money back for order 78910",
+    "expected_tools": ["refund_order"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "q009",
+    "query": "I need the payment returned for this transaction",
+    "expected_tools": ["refund_payment"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "q010",
+    "query": "Show me information about customer C100",
+    "expected_tools": ["get_customer"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q011",
+    "query": "Change the customer's email address",
+    "expected_tools": ["update_customer"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q012",
+    "query": "Find the customer with email john@example.com",
+    "expected_tools": ["search_customers"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q013",
+    "query": "What address does customer C100 have saved?",
+    "expected_tools": ["get_customer_address"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q014",
+    "query": "Charge the customer's card for 150 dollars",
+    "expected_tools": ["charge_payment"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q015",
+    "query": "Has payment P500 been completed?",
+    "expected_tools": ["get_payment_status"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q016",
+    "query": "Where is my package right now?",
+    "expected_tools": ["track_shipment"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q017",
+    "query": "Track shipment TRK123456",
+    "expected_tools": ["track_shipment"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q018",
+    "query": "How much will shipping cost for this package?",
+    "expected_tools": ["get_shipping_rate"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q019",
+    "query": "Create a support ticket because my order arrived damaged",
+    "expected_tools": ["create_ticket"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q020",
+    "query": "Show me support ticket T100",
+    "expected_tools": ["get_ticket"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q021",
+    "query": "Send an email to john@example.com",
+    "expected_tools": ["send_email"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q022",
+    "query": "Find emails about my recent order",
+    "expected_tools": ["search_emails"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q023",
+    "query": "Schedule a meeting for tomorrow",
+    "expected_tools": ["create_event"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q024",
+    "query": "Cancel my calendar meeting",
+    "expected_tools": ["cancel_event"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q025",
+    "query": "Create a new sales lead for John",
+    "expected_tools": ["create_lead"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q026",
+    "query": "Reset the password for user U100",
+    "expected_tools": ["reset_password"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q027",
+    "query": "How much revenue did we make this month?",
+    "expected_tools": ["get_revenue_report"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q028",
+    "query": "How many products are currently available?",
+    "expected_tools": ["check_inventory"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q029",
+    "query": "Is product P100 in stock?",
+    "expected_tools": ["check_inventory"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q030",
+    "query": "Show me sales performance for the last month",
+    "expected_tools": ["get_sales_report"],
+    "difficulty": "medium"
+  }
+]

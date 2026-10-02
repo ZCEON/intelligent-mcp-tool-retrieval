@@ -1,0 +1,1992 @@
+[
+  {
+    "name": "get_order",
+    "description": "Retrieve detailed information about a customer order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        }
+      },
+      "required": [
+        "order_id"
+      ]
+    }
+  },
+  {
+    "name": "search_orders",
+    "description": "Search customer orders using customer information or order status.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "status": {
+          "type": "string",
+          "description": "Current order status.",
+          "enum": [
+            "pending",
+            "processing",
+            "shipped",
+            "delivered",
+            "cancelled"
+          ]
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "create_order",
+    "description": "Create a new customer order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Number of units to order."
+        }
+      },
+      "required": [
+        "customer_id",
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "update_order",
+    "description": "Update information associated with an existing customer order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        },
+        "shipping_address": {
+          "type": "string",
+          "description": "New delivery address."
+        }
+      },
+      "required": [
+        "order_id"
+      ]
+    }
+  },
+  {
+    "name": "cancel_order",
+    "description": "Cancel an existing customer order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Reason for cancelling the order."
+        }
+      },
+      "required": [
+        "order_id",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "refund_order",
+    "description": "Refund an existing customer order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Reason for requesting the refund."
+        }
+      },
+      "required": [
+        "order_id",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "get_order_items",
+    "description": "Retrieve the products and quantities included in an order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        }
+      },
+      "required": [
+        "order_id"
+      ]
+    }
+  },
+  {
+    "name": "update_order_status",
+    "description": "Change the current status of an existing order.",
+    "category": "orders",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        },
+        "status": {
+          "type": "string",
+          "description": "New status for the order.",
+          "enum": [
+            "pending",
+            "processing",
+            "shipped",
+            "delivered",
+            "cancelled"
+          ]
+        }
+      },
+      "required": [
+        "order_id",
+        "status"
+      ]
+    }
+  },
+  {
+    "name": "get_customer",
+    "description": "Retrieve customer profile information.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "search_customers",
+    "description": "Search for customers using their name or email address.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Customer's full or partial name."
+        },
+        "email": {
+          "type": "string",
+          "description": "Customer's email address."
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "create_customer",
+    "description": "Create a new customer profile.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Customer's full name."
+        },
+        "email": {
+          "type": "string",
+          "description": "Customer's email address."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Customer's phone number."
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "update_customer",
+    "description": "Update information in an existing customer profile.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "email": {
+          "type": "string",
+          "description": "Updated email address."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Updated phone number."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "delete_customer",
+    "description": "Remove an existing customer profile.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "get_customer_orders",
+    "description": "Retrieve all orders associated with a customer.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "get_customer_address",
+    "description": "Retrieve the saved address of a customer.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "update_customer_address",
+    "description": "Update the saved address of a customer.",
+    "category": "customers",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "address": {
+          "type": "string",
+          "description": "New customer address."
+        }
+      },
+      "required": [
+        "customer_id",
+        "address"
+      ]
+    }
+  },
+  {
+    "name": "get_payment",
+    "description": "Retrieve details about a specific payment.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "payment_id": {
+          "type": "string",
+          "description": "Unique identifier of the payment."
+        }
+      },
+      "required": [
+        "payment_id"
+      ]
+    }
+  },
+  {
+    "name": "charge_payment",
+    "description": "Charge a payment method for a specified amount.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "amount": {
+          "type": "number",
+          "description": "Amount to charge."
+        }
+      },
+      "required": [
+        "customer_id",
+        "amount"
+      ]
+    }
+  },
+  {
+    "name": "refund_payment",
+    "description": "Refund a completed payment to the customer.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "payment_id": {
+          "type": "string",
+          "description": "Unique identifier of the payment."
+        },
+        "amount": {
+          "type": "number",
+          "description": "Amount to refund."
+        }
+      },
+      "required": [
+        "payment_id",
+        "amount"
+      ]
+    }
+  },
+  {
+    "name": "list_payments",
+    "description": "List payments associated with a customer.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "get_payment_status",
+    "description": "Check the current status of a payment.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "payment_id": {
+          "type": "string",
+          "description": "Unique identifier of the payment."
+        }
+      },
+      "required": [
+        "payment_id"
+      ]
+    }
+  },
+  {
+    "name": "create_payment_method",
+    "description": "Add a payment method to a customer account.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "payment_token": {
+          "type": "string",
+          "description": "Token representing the payment method."
+        }
+      },
+      "required": [
+        "customer_id",
+        "payment_token"
+      ]
+    }
+  },
+  {
+    "name": "remove_payment_method",
+    "description": "Remove a saved payment method from a customer account.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "payment_method_id": {
+          "type": "string",
+          "description": "Unique identifier of the payment method."
+        }
+      },
+      "required": [
+        "customer_id",
+        "payment_method_id"
+      ]
+    }
+  },
+  {
+    "name": "verify_payment",
+    "description": "Verify whether a payment has been successfully completed.",
+    "category": "payments",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "payment_id": {
+          "type": "string",
+          "description": "Unique identifier of the payment."
+        }
+      },
+      "required": [
+        "payment_id"
+      ]
+    }
+  },
+  {
+    "name": "get_invoice",
+    "description": "Retrieve details of a customer invoice.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        }
+      },
+      "required": [
+        "invoice_id"
+      ]
+    }
+  },
+  {
+    "name": "create_invoice",
+    "description": "Create a new invoice for a customer.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "amount": {
+          "type": "number",
+          "description": "Total invoice amount."
+        }
+      },
+      "required": [
+        "customer_id",
+        "amount"
+      ]
+    }
+  },
+  {
+    "name": "update_invoice",
+    "description": "Update information on an existing invoice.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        },
+        "due_date": {
+          "type": "string",
+          "description": "New invoice due date."
+        }
+      },
+      "required": [
+        "invoice_id"
+      ]
+    }
+  },
+  {
+    "name": "cancel_invoice",
+    "description": "Cancel an existing invoice.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Reason for cancelling the invoice."
+        }
+      },
+      "required": [
+        "invoice_id",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "send_invoice",
+    "description": "Send an invoice to the customer's email address.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        },
+        "email": {
+          "type": "string",
+          "description": "Recipient email address."
+        }
+      },
+      "required": [
+        "invoice_id",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "list_invoices",
+    "description": "List invoices belonging to a customer.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "mark_invoice_paid",
+    "description": "Mark an invoice as paid.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        }
+      },
+      "required": [
+        "invoice_id"
+      ]
+    }
+  },
+  {
+    "name": "get_invoice_status",
+    "description": "Retrieve the current status of an invoice.",
+    "category": "invoices",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice_id": {
+          "type": "string",
+          "description": "Unique identifier of the invoice."
+        }
+      },
+      "required": [
+        "invoice_id"
+      ]
+    }
+  },
+  {
+    "name": "get_product",
+    "description": "Retrieve detailed information about a product.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "search_products",
+    "description": "Search the product catalog using keywords.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search keywords for finding products."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "create_product",
+    "description": "Create a new product in the catalog.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Product name."
+        },
+        "price": {
+          "type": "number",
+          "description": "Product price."
+        }
+      },
+      "required": [
+        "name",
+        "price"
+      ]
+    }
+  },
+  {
+    "name": "update_product",
+    "description": "Update product information in the catalog.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "name": {
+          "type": "string",
+          "description": "Updated product name."
+        },
+        "price": {
+          "type": "number",
+          "description": "Updated product price."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "delete_product",
+    "description": "Remove a product from the catalog.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "get_product_price",
+    "description": "Retrieve the current price of a product.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "update_product_price",
+    "description": "Change the price of an existing product.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "price": {
+          "type": "number",
+          "description": "New product price."
+        }
+      },
+      "required": [
+        "product_id",
+        "price"
+      ]
+    }
+  },
+  {
+    "name": "list_products",
+    "description": "Retrieve a list of products from the catalog.",
+    "category": "products",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Product category used to filter results."
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "check_inventory",
+    "description": "Check the available inventory quantity for a product.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "update_inventory",
+    "description": "Update the inventory quantity for a product.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "New inventory quantity."
+        }
+      },
+      "required": [
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "reserve_inventory",
+    "description": "Reserve inventory units for an order.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Number of units to reserve."
+        }
+      },
+      "required": [
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "release_inventory",
+    "description": "Release previously reserved inventory units.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Number of units to release."
+        }
+      },
+      "required": [
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "get_inventory_location",
+    "description": "Find the warehouse location where a product is stored.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "list_low_stock_products",
+    "description": "List products whose inventory is below the configured threshold.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "threshold": {
+          "type": "integer",
+          "description": "Inventory quantity threshold."
+        }
+      },
+      "required": [
+        "threshold"
+      ]
+    }
+  },
+  {
+    "name": "add_inventory",
+    "description": "Increase inventory quantity for a product.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Number of units to add."
+        }
+      },
+      "required": [
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "remove_inventory",
+    "description": "Decrease inventory quantity for a product.",
+    "category": "inventory",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Number of units to remove."
+        }
+      },
+      "required": [
+        "product_id",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "name": "track_shipment",
+    "description": "Retrieve the current tracking information for a shipment.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "tracking_number": {
+          "type": "string",
+          "description": "Unique shipment tracking number."
+        }
+      },
+      "required": [
+        "tracking_number"
+      ]
+    }
+  },
+  {
+    "name": "create_shipment",
+    "description": "Create a shipment for an existing order.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        },
+        "address": {
+          "type": "string",
+          "description": "Delivery address."
+        }
+      },
+      "required": [
+        "order_id",
+        "address"
+      ]
+    }
+  },
+  {
+    "name": "cancel_shipment",
+    "description": "Cancel an existing shipment.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "shipment_id": {
+          "type": "string",
+          "description": "Unique identifier of the shipment."
+        }
+      },
+      "required": [
+        "shipment_id"
+      ]
+    }
+  },
+  {
+    "name": "get_shipping_rate",
+    "description": "Calculate the shipping cost for a destination and package.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "destination": {
+          "type": "string",
+          "description": "Delivery destination."
+        },
+        "weight": {
+          "type": "number",
+          "description": "Package weight."
+        }
+      },
+      "required": [
+        "destination",
+        "weight"
+      ]
+    }
+  },
+  {
+    "name": "update_shipping_address",
+    "description": "Update the delivery address for a shipment.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "shipment_id": {
+          "type": "string",
+          "description": "Unique identifier of the shipment."
+        },
+        "address": {
+          "type": "string",
+          "description": "New delivery address."
+        }
+      },
+      "required": [
+        "shipment_id",
+        "address"
+      ]
+    }
+  },
+  {
+    "name": "get_shipment",
+    "description": "Retrieve detailed information about a shipment.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "shipment_id": {
+          "type": "string",
+          "description": "Unique identifier of the shipment."
+        }
+      },
+      "required": [
+        "shipment_id"
+      ]
+    }
+  },
+  {
+    "name": "list_shipments",
+    "description": "List shipments associated with an order.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "Unique identifier of the order."
+        }
+      },
+      "required": [
+        "order_id"
+      ]
+    }
+  },
+  {
+    "name": "mark_shipment_delivered",
+    "description": "Mark a shipment as delivered.",
+    "category": "shipping",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "shipment_id": {
+          "type": "string",
+          "description": "Unique identifier of the shipment."
+        }
+      },
+      "required": [
+        "shipment_id"
+      ]
+    }
+  },
+  {
+    "name": "create_ticket",
+    "description": "Create a new customer support ticket.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        },
+        "subject": {
+          "type": "string",
+          "description": "Support ticket subject."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the customer's issue."
+        }
+      },
+      "required": [
+        "customer_id",
+        "subject",
+        "description"
+      ]
+    }
+  },
+  {
+    "name": "get_ticket",
+    "description": "Retrieve details about a support ticket.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string",
+          "description": "Unique identifier of the support ticket."
+        }
+      },
+      "required": [
+        "ticket_id"
+      ]
+    }
+  },
+  {
+    "name": "update_ticket",
+    "description": "Update an existing support ticket.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string",
+          "description": "Unique identifier of the support ticket."
+        },
+        "description": {
+          "type": "string",
+          "description": "Updated ticket information."
+        }
+      },
+      "required": [
+        "ticket_id"
+      ]
+    }
+  },
+  {
+    "name": "close_ticket",
+    "description": "Close an existing support ticket.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string",
+          "description": "Unique identifier of the support ticket."
+        }
+      },
+      "required": [
+        "ticket_id"
+      ]
+    }
+  },
+  {
+    "name": "search_tickets",
+    "description": "Search customer support tickets using keywords.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keywords describing the support issue."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "assign_ticket",
+    "description": "Assign a support ticket to an agent.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string",
+          "description": "Unique identifier of the support ticket."
+        },
+        "agent_id": {
+          "type": "string",
+          "description": "Unique identifier of the support agent."
+        }
+      },
+      "required": [
+        "ticket_id",
+        "agent_id"
+      ]
+    }
+  },
+  {
+    "name": "reopen_ticket",
+    "description": "Reopen a previously closed support ticket.",
+    "category": "support",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string",
+          "description": "Unique identifier of the support ticket."
+        }
+      },
+      "required": [
+        "ticket_id"
+      ]
+    }
+  },
+  {
+    "name": "send_email",
+    "description": "Send an email message to one or more recipients.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "recipient": {
+          "type": "string",
+          "description": "Email address of the recipient."
+        },
+        "subject": {
+          "type": "string",
+          "description": "Email subject."
+        },
+        "body": {
+          "type": "string",
+          "description": "Email message content."
+        }
+      },
+      "required": [
+        "recipient",
+        "subject",
+        "body"
+      ]
+    }
+  },
+  {
+    "name": "search_emails",
+    "description": "Search email messages using keywords.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keywords used to search email messages."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_email",
+    "description": "Retrieve a specific email message.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email_id": {
+          "type": "string",
+          "description": "Unique identifier of the email."
+        }
+      },
+      "required": [
+        "email_id"
+      ]
+    }
+  },
+  {
+    "name": "delete_email",
+    "description": "Delete an email message.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email_id": {
+          "type": "string",
+          "description": "Unique identifier of the email."
+        }
+      },
+      "required": [
+        "email_id"
+      ]
+    }
+  },
+  {
+    "name": "mark_email_read",
+    "description": "Mark an email message as read.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email_id": {
+          "type": "string",
+          "description": "Unique identifier of the email."
+        }
+      },
+      "required": [
+        "email_id"
+      ]
+    }
+  },
+  {
+    "name": "archive_email",
+    "description": "Archive an email message.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email_id": {
+          "type": "string",
+          "description": "Unique identifier of the email."
+        }
+      },
+      "required": [
+        "email_id"
+      ]
+    }
+  },
+  {
+    "name": "reply_to_email",
+    "description": "Send a reply to an existing email message.",
+    "category": "email",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email_id": {
+          "type": "string",
+          "description": "Unique identifier of the original email."
+        },
+        "body": {
+          "type": "string",
+          "description": "Reply message content."
+        }
+      },
+      "required": [
+        "email_id",
+        "body"
+      ]
+    }
+  },
+  {
+    "name": "create_event",
+    "description": "Create a new calendar event.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the calendar event."
+        },
+        "start_time": {
+          "type": "string",
+          "description": "Event start date and time."
+        },
+        "end_time": {
+          "type": "string",
+          "description": "Event end date and time."
+        }
+      },
+      "required": [
+        "title",
+        "start_time",
+        "end_time"
+      ]
+    }
+  },
+  {
+    "name": "get_event",
+    "description": "Retrieve details of a calendar event.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "Unique identifier of the calendar event."
+        }
+      },
+      "required": [
+        "event_id"
+      ]
+    }
+  },
+  {
+    "name": "update_event",
+    "description": "Update an existing calendar event.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "Unique identifier of the event."
+        },
+        "title": {
+          "type": "string",
+          "description": "Updated event title."
+        },
+        "start_time": {
+          "type": "string",
+          "description": "Updated start date and time."
+        }
+      },
+      "required": [
+        "event_id"
+      ]
+    }
+  },
+  {
+    "name": "cancel_event",
+    "description": "Cancel an existing calendar event.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "Unique identifier of the calendar event."
+        }
+      },
+      "required": [
+        "event_id"
+      ]
+    }
+  },
+  {
+    "name": "list_events",
+    "description": "List calendar events within a specified date range.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the date range."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the date range."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "find_available_time",
+    "description": "Find available calendar time slots for scheduling.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "Date on which to find an available slot."
+        }
+      },
+      "required": [
+        "date"
+      ]
+    }
+  },
+  {
+    "name": "add_event_attendee",
+    "description": "Add an attendee to an existing calendar event.",
+    "category": "calendar",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "Unique identifier of the event."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the attendee."
+        }
+      },
+      "required": [
+        "event_id",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "create_lead",
+    "description": "Create a new sales lead in the CRM.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Lead's full name."
+        },
+        "email": {
+          "type": "string",
+          "description": "Lead's email address."
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "get_lead",
+    "description": "Retrieve information about a CRM lead.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lead_id": {
+          "type": "string",
+          "description": "Unique identifier of the lead."
+        }
+      },
+      "required": [
+        "lead_id"
+      ]
+    }
+  },
+  {
+    "name": "update_lead",
+    "description": "Update information about an existing CRM lead.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lead_id": {
+          "type": "string",
+          "description": "Unique identifier of the lead."
+        },
+        "status": {
+          "type": "string",
+          "description": "Updated lead status."
+        }
+      },
+      "required": [
+        "lead_id"
+      ]
+    }
+  },
+  {
+    "name": "delete_lead",
+    "description": "Delete a lead from the CRM.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lead_id": {
+          "type": "string",
+          "description": "Unique identifier of the lead."
+        }
+      },
+      "required": [
+        "lead_id"
+      ]
+    }
+  },
+  {
+    "name": "create_contact",
+    "description": "Create a new CRM contact.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Contact's full name."
+        },
+        "email": {
+          "type": "string",
+          "description": "Contact's email address."
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "get_contact",
+    "description": "Retrieve information about a CRM contact.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contact_id": {
+          "type": "string",
+          "description": "Unique identifier of the contact."
+        }
+      },
+      "required": [
+        "contact_id"
+      ]
+    }
+  },
+  {
+    "name": "update_contact",
+    "description": "Update information about an existing CRM contact.",
+    "category": "crm",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contact_id": {
+          "type": "string",
+          "description": "Unique identifier of the contact."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Updated phone number."
+        }
+      },
+      "required": [
+        "contact_id"
+      ]
+    }
+  },
+  {
+    "name": "create_user",
+    "description": "Create a new user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "Desired username."
+        },
+        "email": {
+          "type": "string",
+          "description": "User's email address."
+        }
+      },
+      "required": [
+        "username",
+        "email"
+      ]
+    }
+  },
+  {
+    "name": "get_user",
+    "description": "Retrieve information about a user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  {
+    "name": "update_user",
+    "description": "Update information associated with a user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "Updated email address."
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  {
+    "name": "delete_user",
+    "description": "Delete an existing user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  {
+    "name": "reset_password",
+    "description": "Reset the password for a user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  {
+    "name": "verify_user",
+    "description": "Verify the identity or status of a user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  {
+    "name": "disable_user",
+    "description": "Disable an active user account.",
+    "category": "authentication",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier of the user."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Reason for disabling the account."
+        }
+      },
+      "required": [
+        "user_id",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "get_sales_report",
+    "description": "Generate a sales report for a specified date range.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "get_customer_metrics",
+    "description": "Retrieve metrics describing customer activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique identifier of the customer."
+        }
+      },
+      "required": [
+        "customer_id"
+      ]
+    }
+  },
+  {
+    "name": "get_order_metrics",
+    "description": "Retrieve metrics describing order activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "get_product_metrics",
+    "description": "Retrieve performance metrics for a product.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "get_revenue_report",
+    "description": "Generate a revenue report for a specified date range.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "get_inventory_metrics",
+    "description": "Retrieve metrics describing inventory activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Unique identifier of the product."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "get_payment_metrics",
+    "description": "Retrieve metrics describing payment activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "get_support_metrics",
+    "description": "Retrieve metrics describing customer support activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  },
+  {
+    "name": "get_refund_metrics",
+    "description": "Retrieve metrics describing customer refund activity.",
+    "category": "analytics",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "description": "Beginning of the reporting period."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End of the reporting period."
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date"
+      ]
+    }
+  }
+]
