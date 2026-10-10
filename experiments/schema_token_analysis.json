@@ -1,0 +1,1416 @@
+{
+  "total_tools": 100,
+  "tokenizer": "cl100k_base",
+  "component_token_totals": {
+    "tool_name": 444,
+    "tool_description": 853,
+    "category": 300,
+    "property_names": 520,
+    "property_descriptions": 994,
+    "types_and_constraints": 1186,
+    "required_lists": 483,
+    "other_schema_content": 500
+  },
+  "per_tool_results": [
+    {
+      "tool_name": "get_order",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "search_orders",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 29,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 81
+    },
+    {
+      "tool_name": "create_order",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 9,
+        "property_descriptions": 19,
+        "types_and_constraints": 21,
+        "required_lists": 9,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 86
+    },
+    {
+      "tool_name": "update_order",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 11,
+        "types_and_constraints": 15,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "cancel_order",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "refund_order",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "get_order_items",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 55
+    },
+    {
+      "tool_name": "update_order_status",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 29,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 85
+    },
+    {
+      "tool_name": "get_customer",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 6,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "search_customers",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 13,
+        "types_and_constraints": 13,
+        "required_lists": 1,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "create_customer",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 16,
+        "types_and_constraints": 19,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 77
+    },
+    {
+      "tool_name": "update_customer",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 8,
+        "property_descriptions": 15,
+        "types_and_constraints": 20,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 78
+    },
+    {
+      "tool_name": "delete_customer",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 50
+    },
+    {
+      "tool_name": "get_customer_orders",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "get_customer_address",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "update_customer_address",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "get_payment",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "charge_payment",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "refund_payment",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "list_payments",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "get_payment_status",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "create_payment_method",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 73
+    },
+    {
+      "tool_name": "remove_payment_method",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 8,
+        "property_descriptions": 14,
+        "types_and_constraints": 16,
+        "required_lists": 8,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 77
+    },
+    {
+      "tool_name": "verify_payment",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "get_invoice",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "create_invoice",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "update_invoice",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 12,
+        "types_and_constraints": 15,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 66
+    },
+    {
+      "tool_name": "cancel_invoice",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 6,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 66
+    },
+    {
+      "tool_name": "send_invoice",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 69
+    },
+    {
+      "tool_name": "list_invoices",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "mark_invoice_paid",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "get_invoice_status",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "get_product",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "search_products",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 7,
+        "types_and_constraints": 7,
+        "required_lists": 3,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "create_product",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 7,
+        "types_and_constraints": 13,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 61
+    },
+    {
+      "tool_name": "update_product",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 8,
+        "property_descriptions": 15,
+        "types_and_constraints": 20,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 77
+    },
+    {
+      "tool_name": "delete_product",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "get_product_price",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "update_product_price",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "list_products",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 8,
+        "types_and_constraints": 7,
+        "required_lists": 1,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "check_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "update_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "reserve_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 69
+    },
+    {
+      "tool_name": "release_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "get_inventory_location",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 55
+    },
+    {
+      "tool_name": "list_low_stock_products",
+      "component_tokens": {
+        "tool_name": 6,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 5,
+        "types_and_constraints": 7,
+        "required_lists": 3,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "add_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "remove_inventory",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 69
+    },
+    {
+      "tool_name": "track_shipment",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 6,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "create_shipment",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 10,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "cancel_shipment",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 6,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 50
+    },
+    {
+      "tool_name": "get_shipping_rate",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 7,
+        "types_and_constraints": 13,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 64
+    },
+    {
+      "tool_name": "update_shipping_address",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 68
+    },
+    {
+      "tool_name": "get_shipment",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "list_shipments",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "mark_shipment_delivered",
+      "component_tokens": {
+        "tool_name": 7,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "create_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 8,
+        "property_descriptions": 18,
+        "types_and_constraints": 20,
+        "required_lists": 8,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 84
+    },
+    {
+      "tool_name": "get_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 8,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "update_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 12,
+        "types_and_constraints": 14,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 64
+    },
+    {
+      "tool_name": "close_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 8,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "search_tickets",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 7,
+        "types_and_constraints": 7,
+        "required_lists": 3,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "assign_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 15,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 73
+    },
+    {
+      "tool_name": "reopen_ticket",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 8,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 53
+    },
+    {
+      "tool_name": "send_email",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 14,
+        "types_and_constraints": 19,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 81
+    },
+    {
+      "tool_name": "search_emails",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 8,
+        "types_and_constraints": 7,
+        "required_lists": 3,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "get_email",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 50
+    },
+    {
+      "tool_name": "delete_email",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 6,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "mark_email_read",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "archive_email",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 6,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 49
+    },
+    {
+      "tool_name": "reply_to_email",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 12,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 70
+    },
+    {
+      "tool_name": "create_event",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 9,
+        "property_descriptions": 19,
+        "types_and_constraints": 21,
+        "required_lists": 9,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 86
+    },
+    {
+      "tool_name": "get_event",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 8,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "update_event",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 9,
+        "property_descriptions": 17,
+        "types_and_constraints": 21,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 79
+    },
+    {
+      "tool_name": "cancel_event",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 8,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "list_events",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 72
+    },
+    {
+      "tool_name": "find_available_time",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 3,
+        "property_descriptions": 10,
+        "types_and_constraints": 7,
+        "required_lists": 3,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 54
+    },
+    {
+      "tool_name": "add_event_attendee",
+      "component_tokens": {
+        "tool_name": 7,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 73
+    },
+    {
+      "tool_name": "create_lead",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 10,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 11,
+        "types_and_constraints": 13,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 66
+    },
+    {
+      "tool_name": "get_lead",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "update_lead",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 65
+    },
+    {
+      "tool_name": "delete_lead",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "create_contact",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 11,
+        "types_and_constraints": 13,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 63
+    },
+    {
+      "tool_name": "get_contact",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "update_contact",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 65
+    },
+    {
+      "tool_name": "create_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 5,
+        "property_descriptions": 10,
+        "types_and_constraints": 13,
+        "required_lists": 5,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 62
+    },
+    {
+      "tool_name": "get_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "update_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 11,
+        "types_and_constraints": 14,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 65
+    },
+    {
+      "tool_name": "delete_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 50
+    },
+    {
+      "tool_name": "reset_password",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 9,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "verify_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 54
+    },
+    {
+      "tool_name": "disable_user",
+      "component_tokens": {
+        "tool_name": 4,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 6,
+        "property_descriptions": 13,
+        "types_and_constraints": 14,
+        "required_lists": 6,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 67
+    },
+    {
+      "tool_name": "get_sales_report",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 74
+    },
+    {
+      "tool_name": "get_customer_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "get_order_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 70
+    },
+    {
+      "tool_name": "get_product_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 52
+    },
+    {
+      "tool_name": "get_revenue_report",
+      "component_tokens": {
+        "tool_name": 6,
+        "tool_description": 11,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 75
+    },
+    {
+      "tool_name": "get_inventory_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 4,
+        "property_descriptions": 7,
+        "types_and_constraints": 8,
+        "required_lists": 4,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 51
+    },
+    {
+      "tool_name": "get_payment_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 7,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 70
+    },
+    {
+      "tool_name": "get_support_metrics",
+      "component_tokens": {
+        "tool_name": 5,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 71
+    },
+    {
+      "tool_name": "get_refund_metrics",
+      "component_tokens": {
+        "tool_name": 6,
+        "tool_description": 8,
+        "category": 3,
+        "property_names": 7,
+        "property_descriptions": 13,
+        "types_and_constraints": 15,
+        "required_lists": 7,
+        "other_schema_content": 5
+      },
+      "full_tool_tokens": 72
+    }
+  ]
+}

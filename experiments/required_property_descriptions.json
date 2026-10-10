@@ -1,0 +1,1002 @@
+[
+  {
+    "tool_name": "create_shipment",
+    "property_name": "address",
+    "description": "Delivery address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_customer_address",
+    "property_name": "address",
+    "description": "New customer address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_shipping_address",
+    "property_name": "address",
+    "description": "New delivery address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "assign_ticket",
+    "property_name": "agent_id",
+    "description": "Unique identifier of the support agent.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "charge_payment",
+    "property_name": "amount",
+    "description": "Amount to charge.",
+    "type": "number",
+    "enum": null
+  },
+  {
+    "tool_name": "create_invoice",
+    "property_name": "amount",
+    "description": "Total invoice amount.",
+    "type": "number",
+    "enum": null
+  },
+  {
+    "tool_name": "refund_payment",
+    "property_name": "amount",
+    "description": "Amount to refund.",
+    "type": "number",
+    "enum": null
+  },
+  {
+    "tool_name": "reply_to_email",
+    "property_name": "body",
+    "description": "Reply message content.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "send_email",
+    "property_name": "body",
+    "description": "Email message content.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_contact",
+    "property_name": "contact_id",
+    "description": "Unique identifier of the contact.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_contact",
+    "property_name": "contact_id",
+    "description": "Unique identifier of the contact.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "charge_payment",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_invoice",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_order",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_payment_method",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_ticket",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "delete_customer",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_customer",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_customer_address",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_customer_metrics",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_customer_orders",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_invoices",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_payments",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "remove_payment_method",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "search_orders",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_customer",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_customer_address",
+    "property_name": "customer_id",
+    "description": "Unique identifier of the customer.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "find_available_time",
+    "property_name": "date",
+    "description": "Date on which to find an available slot.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_ticket",
+    "property_name": "description",
+    "description": "Description of the customer's issue.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_shipping_rate",
+    "property_name": "destination",
+    "description": "Delivery destination.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "add_event_attendee",
+    "property_name": "email",
+    "description": "Email address of the attendee.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_contact",
+    "property_name": "email",
+    "description": "Contact's email address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_customer",
+    "property_name": "email",
+    "description": "Customer's email address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_lead",
+    "property_name": "email",
+    "description": "Lead's email address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_user",
+    "property_name": "email",
+    "description": "User's email address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "send_invoice",
+    "property_name": "email",
+    "description": "Recipient email address.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "archive_email",
+    "property_name": "email_id",
+    "description": "Unique identifier of the email.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "delete_email",
+    "property_name": "email_id",
+    "description": "Unique identifier of the email.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_email",
+    "property_name": "email_id",
+    "description": "Unique identifier of the email.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "mark_email_read",
+    "property_name": "email_id",
+    "description": "Unique identifier of the email.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "reply_to_email",
+    "property_name": "email_id",
+    "description": "Unique identifier of the original email.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_order_metrics",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_payment_metrics",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_refund_metrics",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_revenue_report",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_sales_report",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_support_metrics",
+    "property_name": "end_date",
+    "description": "End of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_events",
+    "property_name": "end_date",
+    "description": "End of the date range.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_event",
+    "property_name": "end_time",
+    "description": "Event end date and time.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "add_event_attendee",
+    "property_name": "event_id",
+    "description": "Unique identifier of the event.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_event",
+    "property_name": "event_id",
+    "description": "Unique identifier of the calendar event.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_event",
+    "property_name": "event_id",
+    "description": "Unique identifier of the calendar event.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_event",
+    "property_name": "event_id",
+    "description": "Unique identifier of the event.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_invoice",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_invoice",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_invoice_status",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "mark_invoice_paid",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "send_invoice",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_invoice",
+    "property_name": "invoice_id",
+    "description": "Unique identifier of the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "delete_lead",
+    "property_name": "lead_id",
+    "description": "Unique identifier of the lead.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_lead",
+    "property_name": "lead_id",
+    "description": "Unique identifier of the lead.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_lead",
+    "property_name": "lead_id",
+    "description": "Unique identifier of the lead.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_contact",
+    "property_name": "name",
+    "description": "Contact's full name.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_customer",
+    "property_name": "name",
+    "description": "Customer's full name.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_lead",
+    "property_name": "name",
+    "description": "Lead's full name.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_product",
+    "property_name": "name",
+    "description": "Product name.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_order",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_shipment",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_order",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_order_items",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_shipments",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "refund_order",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_order",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_order_status",
+    "property_name": "order_id",
+    "description": "Unique identifier of the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_payment",
+    "property_name": "payment_id",
+    "description": "Unique identifier of the payment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_payment_status",
+    "property_name": "payment_id",
+    "description": "Unique identifier of the payment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "refund_payment",
+    "property_name": "payment_id",
+    "description": "Unique identifier of the payment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "verify_payment",
+    "property_name": "payment_id",
+    "description": "Unique identifier of the payment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "remove_payment_method",
+    "property_name": "payment_method_id",
+    "description": "Unique identifier of the payment method.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_payment_method",
+    "property_name": "payment_token",
+    "description": "Token representing the payment method.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_product",
+    "property_name": "price",
+    "description": "Product price.",
+    "type": "number",
+    "enum": null
+  },
+  {
+    "tool_name": "update_product_price",
+    "property_name": "price",
+    "description": "New product price.",
+    "type": "number",
+    "enum": null
+  },
+  {
+    "tool_name": "add_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "check_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_order",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "delete_product",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_inventory_location",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_inventory_metrics",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_product",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_product_metrics",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_product_price",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "release_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "remove_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "reserve_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_inventory",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_product",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_product_price",
+    "property_name": "product_id",
+    "description": "Unique identifier of the product.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "add_inventory",
+    "property_name": "quantity",
+    "description": "Number of units to add.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "create_order",
+    "property_name": "quantity",
+    "description": "Number of units to order.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "release_inventory",
+    "property_name": "quantity",
+    "description": "Number of units to release.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "remove_inventory",
+    "property_name": "quantity",
+    "description": "Number of units to remove.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "reserve_inventory",
+    "property_name": "quantity",
+    "description": "Number of units to reserve.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "update_inventory",
+    "property_name": "quantity",
+    "description": "New inventory quantity.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "search_emails",
+    "property_name": "query",
+    "description": "Keywords used to search email messages.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "search_products",
+    "property_name": "query",
+    "description": "Search keywords for finding products.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "search_tickets",
+    "property_name": "query",
+    "description": "Keywords describing the support issue.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_invoice",
+    "property_name": "reason",
+    "description": "Reason for cancelling the invoice.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_order",
+    "property_name": "reason",
+    "description": "Reason for cancelling the order.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "disable_user",
+    "property_name": "reason",
+    "description": "Reason for disabling the account.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "refund_order",
+    "property_name": "reason",
+    "description": "Reason for requesting the refund.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "send_email",
+    "property_name": "recipient",
+    "description": "Email address of the recipient.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "cancel_shipment",
+    "property_name": "shipment_id",
+    "description": "Unique identifier of the shipment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_shipment",
+    "property_name": "shipment_id",
+    "description": "Unique identifier of the shipment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "mark_shipment_delivered",
+    "property_name": "shipment_id",
+    "description": "Unique identifier of the shipment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_shipping_address",
+    "property_name": "shipment_id",
+    "description": "Unique identifier of the shipment.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_order_metrics",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_payment_metrics",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_refund_metrics",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_revenue_report",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_sales_report",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_support_metrics",
+    "property_name": "start_date",
+    "description": "Beginning of the reporting period.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_events",
+    "property_name": "start_date",
+    "description": "Beginning of the date range.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_event",
+    "property_name": "start_time",
+    "description": "Event start date and time.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_order_status",
+    "property_name": "status",
+    "description": "New status for the order.",
+    "type": "string",
+    "enum": [
+      "pending",
+      "processing",
+      "shipped",
+      "delivered",
+      "cancelled"
+    ]
+  },
+  {
+    "tool_name": "create_ticket",
+    "property_name": "subject",
+    "description": "Support ticket subject.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "send_email",
+    "property_name": "subject",
+    "description": "Email subject.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "list_low_stock_products",
+    "property_name": "threshold",
+    "description": "Inventory quantity threshold.",
+    "type": "integer",
+    "enum": null
+  },
+  {
+    "tool_name": "assign_ticket",
+    "property_name": "ticket_id",
+    "description": "Unique identifier of the support ticket.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "close_ticket",
+    "property_name": "ticket_id",
+    "description": "Unique identifier of the support ticket.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_ticket",
+    "property_name": "ticket_id",
+    "description": "Unique identifier of the support ticket.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "reopen_ticket",
+    "property_name": "ticket_id",
+    "description": "Unique identifier of the support ticket.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_ticket",
+    "property_name": "ticket_id",
+    "description": "Unique identifier of the support ticket.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_event",
+    "property_name": "title",
+    "description": "Title of the calendar event.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "track_shipment",
+    "property_name": "tracking_number",
+    "description": "Unique shipment tracking number.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "delete_user",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "disable_user",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_user",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "reset_password",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "update_user",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "verify_user",
+    "property_name": "user_id",
+    "description": "Unique identifier of the user.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "create_user",
+    "property_name": "username",
+    "description": "Desired username.",
+    "type": "string",
+    "enum": null
+  },
+  {
+    "tool_name": "get_shipping_rate",
+    "property_name": "weight",
+    "description": "Package weight.",
+    "type": "number",
+    "enum": null
+  }
+]

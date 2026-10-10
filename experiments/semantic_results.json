@@ -1,0 +1,549 @@
+{
+  "total_queries": 30,
+  "recall_at_1": 63.33,
+  "recall_at_3": 90.0,
+  "recall_at_5": 93.33,
+  "average_latency_ms": 19.0923,
+  "query_results": [
+    {
+      "id": "q001",
+      "query": "I want to refund order 12345",
+      "expected_tools": [
+        "refund_order"
+      ],
+      "retrieved_tools": [
+        "refund_order",
+        "refund_payment",
+        "cancel_order",
+        "update_order",
+        "cancel_shipment"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 35.9814
+    },
+    {
+      "id": "q002",
+      "query": "Please cancel order 54321",
+      "expected_tools": [
+        "cancel_order"
+      ],
+      "retrieved_tools": [
+        "cancel_order",
+        "cancel_shipment",
+        "cancel_invoice",
+        "refund_order",
+        "update_order"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 18.1959
+    },
+    {
+      "id": "q003",
+      "query": "Can you show me the details of order 12345?",
+      "expected_tools": [
+        "get_order"
+      ],
+      "retrieved_tools": [
+        "get_order",
+        "update_order",
+        "search_orders",
+        "refund_order",
+        "create_order"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 25.361
+    },
+    {
+      "id": "q004",
+      "query": "I need to update the delivery address for my order",
+      "expected_tools": [
+        "update_order"
+      ],
+      "retrieved_tools": [
+        "update_shipping_address",
+        "update_order",
+        "update_customer_address",
+        "mark_shipment_delivered",
+        "cancel_shipment"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.5701
+    },
+    {
+      "id": "q005",
+      "query": "What products are included in order 12345?",
+      "expected_tools": [
+        "get_order_items"
+      ],
+      "retrieved_tools": [
+        "get_order_items",
+        "list_shipments",
+        "update_order",
+        "get_order",
+        "list_low_stock_products"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.7642
+    },
+    {
+      "id": "q006",
+      "query": "What is the current status of order 12345?",
+      "expected_tools": [
+        "get_order"
+      ],
+      "retrieved_tools": [
+        "update_order_status",
+        "update_order",
+        "get_order",
+        "search_orders",
+        "cancel_order"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.4622
+    },
+    {
+      "id": "q007",
+      "query": "Find all orders belonging to customer C100",
+      "expected_tools": [
+        "get_customer_orders"
+      ],
+      "retrieved_tools": [
+        "get_customer_orders",
+        "search_orders",
+        "get_order",
+        "update_order",
+        "cancel_order"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.8248
+    },
+    {
+      "id": "q008",
+      "query": "The customer wants their money back for order 78910",
+      "expected_tools": [
+        "refund_order"
+      ],
+      "retrieved_tools": [
+        "refund_order",
+        "refund_payment",
+        "cancel_order",
+        "update_order",
+        "list_payments"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.8325
+    },
+    {
+      "id": "q009",
+      "query": "I need the payment returned for this transaction",
+      "expected_tools": [
+        "refund_payment"
+      ],
+      "retrieved_tools": [
+        "refund_payment",
+        "verify_payment",
+        "get_payment",
+        "get_payment_status",
+        "list_payments"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 22.1826
+    },
+    {
+      "id": "q010",
+      "query": "Show me information about customer C100",
+      "expected_tools": [
+        "get_customer"
+      ],
+      "retrieved_tools": [
+        "search_customers",
+        "get_customer",
+        "update_customer",
+        "get_customer_metrics",
+        "get_support_metrics"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 19.3765
+    },
+    {
+      "id": "q011",
+      "query": "Change the customer's email address",
+      "expected_tools": [
+        "update_customer"
+      ],
+      "retrieved_tools": [
+        "update_customer_address",
+        "get_customer_address",
+        "update_customer",
+        "search_customers",
+        "delete_customer"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 15.9581
+    },
+    {
+      "id": "q012",
+      "query": "Find the customer with email john@example.com",
+      "expected_tools": [
+        "search_customers"
+      ],
+      "retrieved_tools": [
+        "search_customers",
+        "get_customer_address",
+        "get_customer_orders",
+        "get_customer",
+        "update_customer_address"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.2326
+    },
+    {
+      "id": "q013",
+      "query": "What address does customer C100 have saved?",
+      "expected_tools": [
+        "get_customer_address"
+      ],
+      "retrieved_tools": [
+        "get_customer_address",
+        "update_customer_address",
+        "search_customers",
+        "update_customer",
+        "update_shipping_address"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 21.9865
+    },
+    {
+      "id": "q014",
+      "query": "Charge the customer's card for 150 dollars",
+      "expected_tools": [
+        "charge_payment"
+      ],
+      "retrieved_tools": [
+        "charge_payment",
+        "create_payment_method",
+        "remove_payment_method",
+        "update_customer_address",
+        "refund_payment"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 22.1467
+    },
+    {
+      "id": "q015",
+      "query": "Has payment P500 been completed?",
+      "expected_tools": [
+        "get_payment_status"
+      ],
+      "retrieved_tools": [
+        "verify_payment",
+        "get_payment_status",
+        "get_payment",
+        "refund_payment",
+        "create_payment_method"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 19.2244
+    },
+    {
+      "id": "q016",
+      "query": "Where is my package right now?",
+      "expected_tools": [
+        "track_shipment"
+      ],
+      "retrieved_tools": [
+        "mark_shipment_delivered",
+        "get_shipment",
+        "list_shipments",
+        "update_shipping_address",
+        "get_inventory_location"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "latency_ms": 18.7363
+    },
+    {
+      "id": "q017",
+      "query": "Track shipment TRK123456",
+      "expected_tools": [
+        "track_shipment"
+      ],
+      "retrieved_tools": [
+        "track_shipment",
+        "mark_shipment_delivered",
+        "get_shipment",
+        "update_shipping_address",
+        "create_shipment"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 18.9685
+    },
+    {
+      "id": "q018",
+      "query": "How much will shipping cost for this package?",
+      "expected_tools": [
+        "get_shipping_rate"
+      ],
+      "retrieved_tools": [
+        "get_shipping_rate",
+        "mark_shipment_delivered",
+        "list_shipments",
+        "create_shipment",
+        "get_shipment"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.2032
+    },
+    {
+      "id": "q019",
+      "query": "Create a support ticket because my order arrived damaged",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "retrieved_tools": [
+        "create_ticket",
+        "get_ticket",
+        "update_ticket",
+        "assign_ticket",
+        "close_ticket"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.2811
+    },
+    {
+      "id": "q020",
+      "query": "Show me support ticket T100",
+      "expected_tools": [
+        "get_ticket"
+      ],
+      "retrieved_tools": [
+        "create_ticket",
+        "get_ticket",
+        "update_ticket",
+        "assign_ticket",
+        "search_tickets"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.7546
+    },
+    {
+      "id": "q021",
+      "query": "Send an email to john@example.com",
+      "expected_tools": [
+        "send_email"
+      ],
+      "retrieved_tools": [
+        "send_email",
+        "send_invoice",
+        "reply_to_email",
+        "mark_email_read",
+        "update_shipping_address"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 19.6166
+    },
+    {
+      "id": "q022",
+      "query": "Find emails about my recent order",
+      "expected_tools": [
+        "search_emails"
+      ],
+      "retrieved_tools": [
+        "get_order",
+        "get_customer_orders",
+        "get_order_items",
+        "search_orders",
+        "get_email"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "latency_ms": 16.6314
+    },
+    {
+      "id": "q023",
+      "query": "Schedule a meeting for tomorrow",
+      "expected_tools": [
+        "create_event"
+      ],
+      "retrieved_tools": [
+        "find_available_time",
+        "list_events",
+        "add_event_attendee",
+        "cancel_event",
+        "create_event"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": true,
+      "latency_ms": 21.2578
+    },
+    {
+      "id": "q024",
+      "query": "Cancel my calendar meeting",
+      "expected_tools": [
+        "cancel_event"
+      ],
+      "retrieved_tools": [
+        "cancel_event",
+        "add_event_attendee",
+        "cancel_order",
+        "cancel_invoice",
+        "update_event"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.2592
+    },
+    {
+      "id": "q025",
+      "query": "Create a new sales lead for John",
+      "expected_tools": [
+        "create_lead"
+      ],
+      "retrieved_tools": [
+        "create_lead",
+        "update_lead",
+        "get_lead",
+        "delete_lead",
+        "create_order"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 15.9993
+    },
+    {
+      "id": "q026",
+      "query": "Reset the password for user U100",
+      "expected_tools": [
+        "reset_password"
+      ],
+      "retrieved_tools": [
+        "reset_password",
+        "delete_user",
+        "update_user",
+        "disable_user",
+        "verify_user"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.3502
+    },
+    {
+      "id": "q027",
+      "query": "How much revenue did we make this month?",
+      "expected_tools": [
+        "get_revenue_report"
+      ],
+      "retrieved_tools": [
+        "get_revenue_report",
+        "get_payment_metrics",
+        "get_refund_metrics",
+        "get_inventory_metrics",
+        "get_sales_report"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.8053
+    },
+    {
+      "id": "q028",
+      "query": "How many products are currently available?",
+      "expected_tools": [
+        "check_inventory"
+      ],
+      "retrieved_tools": [
+        "list_products",
+        "list_low_stock_products",
+        "check_inventory",
+        "get_product",
+        "get_product_price"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 16.5083
+    },
+    {
+      "id": "q029",
+      "query": "Is product P100 in stock?",
+      "expected_tools": [
+        "check_inventory"
+      ],
+      "retrieved_tools": [
+        "update_inventory",
+        "list_low_stock_products",
+        "check_inventory",
+        "get_product_price",
+        "release_inventory"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 17.2446
+    },
+    {
+      "id": "q030",
+      "query": "Show me sales performance for the last month",
+      "expected_tools": [
+        "get_sales_report"
+      ],
+      "retrieved_tools": [
+        "get_sales_report",
+        "get_revenue_report",
+        "get_product_metrics",
+        "get_order_metrics",
+        "get_inventory_metrics"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "latency_ms": 22.0524
+    }
+  ]
+}
