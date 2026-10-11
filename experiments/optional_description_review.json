@@ -1,0 +1,172 @@
+[
+  {
+    "tool_name": "search_orders",
+    "property_name": "status",
+    "original_description": "Current order status.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_order",
+    "property_name": "shipping_address",
+    "original_description": "New delivery address.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "search_customers",
+    "property_name": "name",
+    "original_description": "Customer's full or partial name.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "search_customers",
+    "property_name": "email",
+    "original_description": "Customer's email address.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "create_customer",
+    "property_name": "phone",
+    "original_description": "Customer's phone number.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_customer",
+    "property_name": "email",
+    "original_description": "Updated email address.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_customer",
+    "property_name": "phone",
+    "original_description": "Updated phone number.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_invoice",
+    "property_name": "due_date",
+    "original_description": "New invoice due date.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_product",
+    "property_name": "name",
+    "original_description": "Updated product name.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_product",
+    "property_name": "price",
+    "original_description": "Updated product price.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "list_products",
+    "property_name": "category",
+    "original_description": "Product category used to filter results.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_ticket",
+    "property_name": "description",
+    "original_description": "Updated ticket information.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_event",
+    "property_name": "title",
+    "original_description": "Updated event title.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_event",
+    "property_name": "start_time",
+    "original_description": "Updated start date and time.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_lead",
+    "property_name": "status",
+    "original_description": "Updated lead status.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_contact",
+    "property_name": "phone",
+    "original_description": "Updated phone number.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  },
+  {
+    "tool_name": "update_user",
+    "property_name": "email",
+    "original_description": "Updated email address.",
+    "compressed_description": null,
+    "review_status": "needs_manual_review",
+    "information_loss_risk": "not_assessed",
+    "reason": "Determine whether the original description contains useful information not represented by the property name or remaining schema constraints.",
+    "recommended_action": "review_before_accepting"
+  }
+]

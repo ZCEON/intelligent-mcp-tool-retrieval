@@ -1,0 +1,139 @@
+{
+  "tools_checked": 100,
+  "audit_changes_reviewed": 85,
+  "structural_errors": [],
+  "optional_description_warnings": [
+    {
+      "tool_name": "search_orders",
+      "property_name": "status",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": true,
+      "original_description": "Current order status.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_order",
+      "property_name": "shipping_address",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "New delivery address.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "search_customers",
+      "property_name": "email",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Customer's email address.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "create_customer",
+      "property_name": "phone",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Customer's phone number.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_customer",
+      "property_name": "email",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated email address.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_customer",
+      "property_name": "phone",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated phone number.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_invoice",
+      "property_name": "due_date",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "New invoice due date.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_product",
+      "property_name": "name",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated product name.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_product",
+      "property_name": "price",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated product price.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_event",
+      "property_name": "title",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated event title.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_event",
+      "property_name": "start_time",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated start date and time.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_lead",
+      "property_name": "status",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated lead status.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_contact",
+      "property_name": "phone",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated phone number.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    },
+    {
+      "tool_name": "update_user",
+      "property_name": "email",
+      "issue": "Optional property description removed.",
+      "has_type": true,
+      "has_enum": false,
+      "original_description": "Updated email address.",
+      "risk_note": "Review whether the property name and remaining schema information communicate its intended meaning."
+    }
+  ],
+  "structural_validation_passed": true,
+  "warning_count": 14,
+  "limitations": [
+    "Passing structural checks does not prove that shortened natural-language descriptions preserve their full meaning.",
+    "Optional description removals require review based on the property name, constraints, and intended tool behavior."
+  ]
+}

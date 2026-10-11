@@ -1,0 +1,602 @@
+{
+  "experiment": "revised_schema_compression_v3",
+  "dataset": "data/tools/tools.json",
+  "tool_count": 100,
+  "encoding": "cl100k_base",
+  "serialization": "compact JSON; ensure_ascii=False",
+  "original_tokens": 6137,
+  "compressed_tokens": 5922,
+  "tokens_saved": 215,
+  "reduction_percentage": 3.5033,
+  "transformation_counts": {
+    "removed": 1,
+    "shortened_or_changed": 71
+  },
+  "total_description_changes": 72,
+  "structural_checks_passed": 100,
+  "structural_checks_failed": [],
+  "all_structural_checks_passed": true,
+  "changes": [
+    {
+      "tool_name": "get_order",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "search_orders",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "search_orders",
+      "property_name": "status",
+      "transformation": "removed",
+      "original_description": "Current order status.",
+      "compressed_description": null,
+      "required": false
+    },
+    {
+      "tool_name": "create_order",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "create_order",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_order",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "cancel_order",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "refund_order",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_order_items",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_order_status",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_customer",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_customer",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "delete_customer",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_customer_orders",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_customer_address",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_customer_address",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_payment",
+      "property_name": "payment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the payment.",
+      "compressed_description": "Payment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "charge_payment",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "refund_payment",
+      "property_name": "payment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the payment.",
+      "compressed_description": "Payment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "list_payments",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_payment_status",
+      "property_name": "payment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the payment.",
+      "compressed_description": "Payment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "create_payment_method",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "remove_payment_method",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "remove_payment_method",
+      "property_name": "payment_method_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the payment method.",
+      "compressed_description": "Payment Method ID.",
+      "required": true
+    },
+    {
+      "tool_name": "verify_payment",
+      "property_name": "payment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the payment.",
+      "compressed_description": "Payment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_invoice",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "create_invoice",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_invoice",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "cancel_invoice",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "send_invoice",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "list_invoices",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "mark_invoice_paid",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_invoice_status",
+      "property_name": "invoice_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the invoice.",
+      "compressed_description": "Invoice ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_product",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_product",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "delete_product",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_product_price",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_product_price",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "check_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "reserve_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "release_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_inventory_location",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "add_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "remove_inventory",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "create_shipment",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "cancel_shipment",
+      "property_name": "shipment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the shipment.",
+      "compressed_description": "Shipment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_shipping_address",
+      "property_name": "shipment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the shipment.",
+      "compressed_description": "Shipment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_shipment",
+      "property_name": "shipment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the shipment.",
+      "compressed_description": "Shipment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "list_shipments",
+      "property_name": "order_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the order.",
+      "compressed_description": "Order ID.",
+      "required": true
+    },
+    {
+      "tool_name": "mark_shipment_delivered",
+      "property_name": "shipment_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the shipment.",
+      "compressed_description": "Shipment ID.",
+      "required": true
+    },
+    {
+      "tool_name": "create_ticket",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_email",
+      "property_name": "email_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the email.",
+      "compressed_description": "Email ID.",
+      "required": true
+    },
+    {
+      "tool_name": "delete_email",
+      "property_name": "email_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the email.",
+      "compressed_description": "Email ID.",
+      "required": true
+    },
+    {
+      "tool_name": "mark_email_read",
+      "property_name": "email_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the email.",
+      "compressed_description": "Email ID.",
+      "required": true
+    },
+    {
+      "tool_name": "archive_email",
+      "property_name": "email_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the email.",
+      "compressed_description": "Email ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_event",
+      "property_name": "event_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the event.",
+      "compressed_description": "Event ID.",
+      "required": true
+    },
+    {
+      "tool_name": "add_event_attendee",
+      "property_name": "event_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the event.",
+      "compressed_description": "Event ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_lead",
+      "property_name": "lead_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the lead.",
+      "compressed_description": "Lead ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_lead",
+      "property_name": "lead_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the lead.",
+      "compressed_description": "Lead ID.",
+      "required": true
+    },
+    {
+      "tool_name": "delete_lead",
+      "property_name": "lead_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the lead.",
+      "compressed_description": "Lead ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_contact",
+      "property_name": "contact_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the contact.",
+      "compressed_description": "Contact ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_contact",
+      "property_name": "contact_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the contact.",
+      "compressed_description": "Contact ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_user",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "update_user",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "delete_user",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "reset_password",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "verify_user",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "disable_user",
+      "property_name": "user_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the user.",
+      "compressed_description": "User ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_customer_metrics",
+      "property_name": "customer_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the customer.",
+      "compressed_description": "Customer ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_product_metrics",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    },
+    {
+      "tool_name": "get_inventory_metrics",
+      "property_name": "product_id",
+      "transformation": "shortened_or_changed",
+      "original_description": "Unique identifier of the product.",
+      "compressed_description": "Product ID.",
+      "required": true
+    }
+  ],
+  "limitations": [
+    "Token savings depend on the selected tokenizer and JSON serialization.",
+    "Structural equality after ignoring descriptions does not prove semantic equivalence.",
+    "This evaluation measures schema token savings, not successful tool execution."
+  ]
+}

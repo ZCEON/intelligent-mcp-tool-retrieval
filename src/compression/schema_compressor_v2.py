@@ -11,6 +11,30 @@ IDENTIFIER_DESCRIPTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+# Optional-property descriptions that document tool behavior
+# or disambiguate a property name, reviewed explicitly.
+PRESERVED_OPTIONAL_DESCRIPTIONS = {
+    # Existing descriptions preserved by V2
+    ("search_customers", "name"),
+    ("list_products", "category"),
+    ("update_ticket", "description"),
+
+    # Additional descriptions preserved after semantic review
+    ("update_order", "shipping_address"),
+    ("search_customers", "email"),
+    ("create_customer", "phone"),
+    ("update_customer", "email"),
+    ("update_customer", "phone"),
+    ("update_invoice", "due_date"),
+    ("update_product", "name"),
+    ("update_product", "price"),
+    ("update_event", "title"),
+    ("update_event", "start_time"),
+    ("update_lead", "status"),
+    ("update_contact", "phone"),
+    ("update_user", "email"),
+}
+
 
 def get_short_identifier_description(
     property_name,
@@ -73,8 +97,12 @@ def compress_schema_v2(tool):
         description = property_schema.get("description")
 
         if property_name not in required_fields:
-            # Retain V1 behavior.
-            property_schema.pop("description", None)
+            tool_name = compressed_tool.get("name")
+
+            preservation_key = (tool_name, property_name)
+
+            if preservation_key not in PRESERVED_OPTIONAL_DESCRIPTIONS:
+                property_schema.pop("description", None)
             continue
 
         if description:

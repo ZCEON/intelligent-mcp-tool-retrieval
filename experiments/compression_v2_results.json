@@ -1,0 +1,826 @@
+{
+  "total_tools": 100,
+  "tokenizer": "cl100k_base",
+  "original_tokens": 6137,
+  "v1": {
+    "compressed_tokens": 6008,
+    "tokens_saved": 129,
+    "reduction_percent": 2.1,
+    "tools_reduced": 13,
+    "preservation_passed": true,
+    "errors": []
+  },
+  "v2": {
+    "compressed_tokens": 5826,
+    "tokens_saved": 311,
+    "reduction_percent": 5.07,
+    "tools_reduced": 71,
+    "required_descriptions_shortened": 71,
+    "preservation_passed": true,
+    "errors": []
+  },
+  "additional_tokens_saved_by_v2_vs_v1": 182,
+  "additional_reduction_percent_vs_v1": 3.03,
+  "per_tool_results": [
+    {
+      "tool_name": "get_order",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "search_orders",
+      "original_tokens": 81,
+      "v1_tokens": 75,
+      "v2_tokens": 72,
+      "v1_tokens_saved": 6,
+      "v2_tokens_saved": 9
+    },
+    {
+      "tool_name": "create_order",
+      "original_tokens": 86,
+      "v1_tokens": 86,
+      "v2_tokens": 80,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 6
+    },
+    {
+      "tool_name": "update_order",
+      "original_tokens": 67,
+      "v1_tokens": 60,
+      "v2_tokens": 57,
+      "v1_tokens_saved": 7,
+      "v2_tokens_saved": 10
+    },
+    {
+      "tool_name": "cancel_order",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "refund_order",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_order_items",
+      "original_tokens": 55,
+      "v1_tokens": 55,
+      "v2_tokens": 52,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_order_status",
+      "original_tokens": 85,
+      "v1_tokens": 85,
+      "v2_tokens": 82,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_customer",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 46,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "search_customers",
+      "original_tokens": 67,
+      "v1_tokens": 49,
+      "v2_tokens": 59,
+      "v1_tokens_saved": 18,
+      "v2_tokens_saved": 8
+    },
+    {
+      "tool_name": "create_customer",
+      "original_tokens": 77,
+      "v1_tokens": 69,
+      "v2_tokens": 69,
+      "v1_tokens_saved": 8,
+      "v2_tokens_saved": 8
+    },
+    {
+      "tool_name": "update_customer",
+      "original_tokens": 78,
+      "v1_tokens": 64,
+      "v2_tokens": 61,
+      "v1_tokens_saved": 14,
+      "v2_tokens_saved": 17
+    },
+    {
+      "tool_name": "delete_customer",
+      "original_tokens": 50,
+      "v1_tokens": 50,
+      "v2_tokens": 47,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_customer_orders",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_customer_address",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_customer_address",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_payment",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "charge_payment",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "refund_payment",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "list_payments",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_payment_status",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "create_payment_method",
+      "original_tokens": 73,
+      "v1_tokens": 73,
+      "v2_tokens": 70,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "remove_payment_method",
+      "original_tokens": 77,
+      "v1_tokens": 77,
+      "v2_tokens": 71,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 6
+    },
+    {
+      "tool_name": "verify_payment",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_invoice",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "create_invoice",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_invoice",
+      "original_tokens": 66,
+      "v1_tokens": 58,
+      "v2_tokens": 55,
+      "v1_tokens_saved": 8,
+      "v2_tokens_saved": 11
+    },
+    {
+      "tool_name": "cancel_invoice",
+      "original_tokens": 66,
+      "v1_tokens": 66,
+      "v2_tokens": 63,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "send_invoice",
+      "original_tokens": 69,
+      "v1_tokens": 69,
+      "v2_tokens": 66,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "list_invoices",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "mark_invoice_paid",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_invoice_status",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_product",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "search_products",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "create_product",
+      "original_tokens": 61,
+      "v1_tokens": 61,
+      "v2_tokens": 61,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "update_product",
+      "original_tokens": 77,
+      "v1_tokens": 63,
+      "v2_tokens": 60,
+      "v1_tokens_saved": 14,
+      "v2_tokens_saved": 17
+    },
+    {
+      "tool_name": "delete_product",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_product_price",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_product_price",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "list_products",
+      "original_tokens": 51,
+      "v1_tokens": 41,
+      "v2_tokens": 51,
+      "v1_tokens_saved": 10,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "check_inventory",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_inventory",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "reserve_inventory",
+      "original_tokens": 69,
+      "v1_tokens": 69,
+      "v2_tokens": 66,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "release_inventory",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_inventory_location",
+      "original_tokens": 55,
+      "v1_tokens": 55,
+      "v2_tokens": 52,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "list_low_stock_products",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 52,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "add_inventory",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 65,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "remove_inventory",
+      "original_tokens": 69,
+      "v1_tokens": 69,
+      "v2_tokens": 66,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "track_shipment",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 53,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "create_shipment",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "cancel_shipment",
+      "original_tokens": 50,
+      "v1_tokens": 50,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 2
+    },
+    {
+      "tool_name": "get_shipping_rate",
+      "original_tokens": 64,
+      "v1_tokens": 64,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "update_shipping_address",
+      "original_tokens": 68,
+      "v1_tokens": 68,
+      "v2_tokens": 66,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 2
+    },
+    {
+      "tool_name": "get_shipment",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 50,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 2
+    },
+    {
+      "tool_name": "list_shipments",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "mark_shipment_delivered",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 51,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 2
+    },
+    {
+      "tool_name": "create_ticket",
+      "original_tokens": 84,
+      "v1_tokens": 84,
+      "v2_tokens": 81,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_ticket",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 52,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "update_ticket",
+      "original_tokens": 64,
+      "v1_tokens": 57,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 7,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "close_ticket",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 51,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "search_tickets",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "assign_ticket",
+      "original_tokens": 73,
+      "v1_tokens": 73,
+      "v2_tokens": 73,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "reopen_ticket",
+      "original_tokens": 53,
+      "v1_tokens": 53,
+      "v2_tokens": 53,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "send_email",
+      "original_tokens": 81,
+      "v1_tokens": 81,
+      "v2_tokens": 81,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "search_emails",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_email",
+      "original_tokens": 50,
+      "v1_tokens": 50,
+      "v2_tokens": 47,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "delete_email",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 46,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "mark_email_read",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "archive_email",
+      "original_tokens": 49,
+      "v1_tokens": 49,
+      "v2_tokens": 46,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "reply_to_email",
+      "original_tokens": 70,
+      "v1_tokens": 70,
+      "v2_tokens": 70,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "create_event",
+      "original_tokens": 86,
+      "v1_tokens": 86,
+      "v2_tokens": 86,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_event",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 52,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "update_event",
+      "original_tokens": 79,
+      "v1_tokens": 63,
+      "v2_tokens": 60,
+      "v1_tokens_saved": 16,
+      "v2_tokens_saved": 19
+    },
+    {
+      "tool_name": "cancel_event",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 51,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "list_events",
+      "original_tokens": 72,
+      "v1_tokens": 72,
+      "v2_tokens": 72,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "find_available_time",
+      "original_tokens": 54,
+      "v1_tokens": 54,
+      "v2_tokens": 54,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "add_event_attendee",
+      "original_tokens": 73,
+      "v1_tokens": 73,
+      "v2_tokens": 70,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "create_lead",
+      "original_tokens": 66,
+      "v1_tokens": 66,
+      "v2_tokens": 66,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_lead",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_lead",
+      "original_tokens": 65,
+      "v1_tokens": 58,
+      "v2_tokens": 55,
+      "v1_tokens_saved": 7,
+      "v2_tokens_saved": 10
+    },
+    {
+      "tool_name": "delete_lead",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "create_contact",
+      "original_tokens": 63,
+      "v1_tokens": 63,
+      "v2_tokens": 63,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_contact",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_contact",
+      "original_tokens": 65,
+      "v1_tokens": 58,
+      "v2_tokens": 55,
+      "v1_tokens_saved": 7,
+      "v2_tokens_saved": 10
+    },
+    {
+      "tool_name": "create_user",
+      "original_tokens": 62,
+      "v1_tokens": 62,
+      "v2_tokens": 62,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_user",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "update_user",
+      "original_tokens": 65,
+      "v1_tokens": 58,
+      "v2_tokens": 55,
+      "v1_tokens_saved": 7,
+      "v2_tokens_saved": 10
+    },
+    {
+      "tool_name": "delete_user",
+      "original_tokens": 50,
+      "v1_tokens": 50,
+      "v2_tokens": 47,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "reset_password",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "verify_user",
+      "original_tokens": 54,
+      "v1_tokens": 54,
+      "v2_tokens": 51,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "disable_user",
+      "original_tokens": 67,
+      "v1_tokens": 67,
+      "v2_tokens": 64,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_sales_report",
+      "original_tokens": 74,
+      "v1_tokens": 74,
+      "v2_tokens": 74,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_customer_metrics",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_order_metrics",
+      "original_tokens": 70,
+      "v1_tokens": 70,
+      "v2_tokens": 70,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_product_metrics",
+      "original_tokens": 52,
+      "v1_tokens": 52,
+      "v2_tokens": 49,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_revenue_report",
+      "original_tokens": 75,
+      "v1_tokens": 75,
+      "v2_tokens": 75,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_inventory_metrics",
+      "original_tokens": 51,
+      "v1_tokens": 51,
+      "v2_tokens": 48,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 3
+    },
+    {
+      "tool_name": "get_payment_metrics",
+      "original_tokens": 70,
+      "v1_tokens": 70,
+      "v2_tokens": 70,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_support_metrics",
+      "original_tokens": 71,
+      "v1_tokens": 71,
+      "v2_tokens": 71,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    },
+    {
+      "tool_name": "get_refund_metrics",
+      "original_tokens": 72,
+      "v1_tokens": 72,
+      "v2_tokens": 72,
+      "v1_tokens_saved": 0,
+      "v2_tokens_saved": 0
+    }
+  ]
+}

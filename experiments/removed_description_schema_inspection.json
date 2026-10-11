@@ -1,0 +1,254 @@
+{
+  "removed_descriptions_found": 14,
+  "inspections": [
+    {
+      "tool_name": "search_orders",
+      "tool_description": "Search customer orders using customer information or order status.",
+      "property_name": "status",
+      "original_description": "Current order status.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Current order status.",
+        "enum": [
+          "pending",
+          "processing",
+          "shipped",
+          "delivered",
+          "cancelled"
+        ]
+      },
+      "required_properties": [
+        "customer_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "low_risk",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_order",
+      "tool_description": "Update information associated with an existing customer order.",
+      "property_name": "shipping_address",
+      "original_description": "New delivery address.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "New delivery address."
+      },
+      "required_properties": [
+        "order_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "search_customers",
+      "tool_description": "Search for customers using their name or email address.",
+      "property_name": "email",
+      "original_description": "Customer's email address.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Customer's email address."
+      },
+      "required_properties": [],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "create_customer",
+      "tool_description": "Create a new customer profile.",
+      "property_name": "phone",
+      "original_description": "Customer's phone number.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Customer's phone number."
+      },
+      "required_properties": [
+        "name",
+        "email"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_customer",
+      "tool_description": "Update information in an existing customer profile.",
+      "property_name": "email",
+      "original_description": "Updated email address.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated email address."
+      },
+      "required_properties": [
+        "customer_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_customer",
+      "tool_description": "Update information in an existing customer profile.",
+      "property_name": "phone",
+      "original_description": "Updated phone number.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated phone number."
+      },
+      "required_properties": [
+        "customer_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_invoice",
+      "tool_description": "Update information on an existing invoice.",
+      "property_name": "due_date",
+      "original_description": "New invoice due date.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "New invoice due date."
+      },
+      "required_properties": [
+        "invoice_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_product",
+      "tool_description": "Update product information in the catalog.",
+      "property_name": "name",
+      "original_description": "Updated product name.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated product name."
+      },
+      "required_properties": [
+        "product_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_product",
+      "tool_description": "Update product information in the catalog.",
+      "property_name": "price",
+      "original_description": "Updated product price.",
+      "required": false,
+      "property_schema": {
+        "type": "number",
+        "description": "Updated product price."
+      },
+      "required_properties": [
+        "product_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_event",
+      "tool_description": "Update an existing calendar event.",
+      "property_name": "title",
+      "original_description": "Updated event title.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated event title."
+      },
+      "required_properties": [
+        "event_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_event",
+      "tool_description": "Update an existing calendar event.",
+      "property_name": "start_time",
+      "original_description": "Updated start date and time.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated start date and time."
+      },
+      "required_properties": [
+        "event_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_lead",
+      "tool_description": "Update information about an existing CRM lead.",
+      "property_name": "status",
+      "original_description": "Updated lead status.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated lead status."
+      },
+      "required_properties": [
+        "lead_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_contact",
+      "tool_description": "Update information about an existing CRM contact.",
+      "property_name": "phone",
+      "original_description": "Updated phone number.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated phone number."
+      },
+      "required_properties": [
+        "contact_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    },
+    {
+      "tool_name": "update_user",
+      "tool_description": "Update information associated with a user account.",
+      "property_name": "email",
+      "original_description": "Updated email address.",
+      "required": false,
+      "property_schema": {
+        "type": "string",
+        "description": "Updated email address."
+      },
+      "required_properties": [
+        "user_id"
+      ],
+      "schema_level_constraints": {},
+      "preliminary_risk_category": "needs_investigation",
+      "manual_review_status": "pending"
+    }
+  ],
+  "limitations": [
+    "Schema inspection reveals declared constraints but does not prove actual tool runtime behavior.",
+    "Descriptions must be evaluated in the context of the full tool purpose and schema.",
+    "No manual review is marked complete by this script."
+  ]
+}

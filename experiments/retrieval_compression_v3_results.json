@@ -1,0 +1,1309 @@
+{
+  "summary": {
+    "retrieval_method": "semantic",
+    "compression_method": "revised_schema_compressor_v2",
+    "top_k": 5,
+    "query_count": 30,
+    "average_selected_tools_per_query": 5.0,
+    "total_original_tokens": 9386,
+    "total_compressed_tokens": 9020,
+    "total_tokens_saved": 366,
+    "overall_reduction_percent": 3.9,
+    "average_retrieval_latency_ms": 19.6473,
+    "average_compression_latency_ms": 0.2865,
+    "average_total_pipeline_latency_ms": 19.9338,
+    "tokenizer": "cl100k_base"
+  },
+  "query_results": [
+    {
+      "query": "I want to refund order 12345",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 40.3404,
+      "compression_latency_ms": 0.2587,
+      "total_pipeline_latency_ms": 40.5991,
+      "original_tokens": 320,
+      "compressed_tokens": 306,
+      "tokens_saved": 14,
+      "reduction_percent": 4.38,
+      "selected_tools": [
+        {
+          "tool_name": "refund_order",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "refund_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_shipment",
+          "original_tokens": 50,
+          "compressed_tokens": 48,
+          "tokens_saved": 2
+        }
+      ]
+    },
+    {
+      "query": "Please cancel order 54321",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.4634,
+      "compression_latency_ms": 0.6873,
+      "total_pipeline_latency_ms": 19.1507,
+      "original_tokens": 318,
+      "compressed_tokens": 304,
+      "tokens_saved": 14,
+      "reduction_percent": 4.4,
+      "selected_tools": [
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_shipment",
+          "original_tokens": 50,
+          "compressed_tokens": 48,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "cancel_invoice",
+          "original_tokens": 66,
+          "compressed_tokens": 63,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "refund_order",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Can you show me the details of order 12345?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.745,
+      "compression_latency_ms": 0.2028,
+      "total_pipeline_latency_ms": 18.9478,
+      "original_tokens": 354,
+      "compressed_tokens": 330,
+      "tokens_saved": 24,
+      "reduction_percent": 6.78,
+      "selected_tools": [
+        {
+          "tool_name": "get_order",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_orders",
+          "original_tokens": 81,
+          "compressed_tokens": 72,
+          "tokens_saved": 9
+        },
+        {
+          "tool_name": "refund_order",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "create_order",
+          "original_tokens": 86,
+          "compressed_tokens": 80,
+          "tokens_saved": 6
+        }
+      ]
+    },
+    {
+      "query": "I need to update the delivery address for my order",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.4372,
+      "compression_latency_ms": 0.3604,
+      "total_pipeline_latency_ms": 18.7976,
+      "original_tokens": 306,
+      "compressed_tokens": 294,
+      "tokens_saved": 12,
+      "reduction_percent": 3.92,
+      "selected_tools": [
+        {
+          "tool_name": "update_shipping_address",
+          "original_tokens": 68,
+          "compressed_tokens": 66,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_customer_address",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "mark_shipment_delivered",
+          "original_tokens": 53,
+          "compressed_tokens": 51,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "cancel_shipment",
+          "original_tokens": 50,
+          "compressed_tokens": 48,
+          "tokens_saved": 2
+        }
+      ]
+    },
+    {
+      "query": "What products are included in order 12345?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 21.2568,
+      "compression_latency_ms": 0.2742,
+      "total_pipeline_latency_ms": 21.531,
+      "original_tokens": 278,
+      "compressed_tokens": 266,
+      "tokens_saved": 12,
+      "reduction_percent": 4.32,
+      "selected_tools": [
+        {
+          "tool_name": "get_order_items",
+          "original_tokens": 55,
+          "compressed_tokens": 52,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "list_shipments",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_order",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "list_low_stock_products",
+          "original_tokens": 52,
+          "compressed_tokens": 52,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "What is the current status of order 12345?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 24.5887,
+      "compression_latency_ms": 0.3436,
+      "total_pipeline_latency_ms": 24.9323,
+      "original_tokens": 352,
+      "compressed_tokens": 331,
+      "tokens_saved": 21,
+      "reduction_percent": 5.97,
+      "selected_tools": [
+        {
+          "tool_name": "update_order_status",
+          "original_tokens": 85,
+          "compressed_tokens": 82,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_order",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_orders",
+          "original_tokens": 81,
+          "compressed_tokens": 72,
+          "tokens_saved": 9
+        },
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Find all orders belonging to customer C100",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 19.2257,
+      "compression_latency_ms": 0.1803,
+      "total_pipeline_latency_ms": 19.406,
+      "original_tokens": 320,
+      "compressed_tokens": 299,
+      "tokens_saved": 21,
+      "reduction_percent": 6.56,
+      "selected_tools": [
+        {
+          "tool_name": "get_customer_orders",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_orders",
+          "original_tokens": 81,
+          "compressed_tokens": 72,
+          "tokens_saved": 9
+        },
+        {
+          "tool_name": "get_order",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "The customer wants their money back for order 78910",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 17.5151,
+      "compression_latency_ms": 0.1788,
+      "total_pipeline_latency_ms": 17.6939,
+      "original_tokens": 321,
+      "compressed_tokens": 306,
+      "tokens_saved": 15,
+      "reduction_percent": 4.67,
+      "selected_tools": [
+        {
+          "tool_name": "refund_order",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "refund_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "list_payments",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "I need the payment returned for this transaction",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 19.6893,
+      "compression_latency_ms": 0.1602,
+      "total_pipeline_latency_ms": 19.8495,
+      "original_tokens": 276,
+      "compressed_tokens": 261,
+      "tokens_saved": 15,
+      "reduction_percent": 5.43,
+      "selected_tools": [
+        {
+          "tool_name": "refund_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "verify_payment",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_payment",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_payment_status",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "list_payments",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Show me information about customer C100",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.5231,
+      "compression_latency_ms": 0.4725,
+      "total_pipeline_latency_ms": 18.9956,
+      "original_tokens": 316,
+      "compressed_tokens": 307,
+      "tokens_saved": 9,
+      "reduction_percent": 2.85,
+      "selected_tools": [
+        {
+          "tool_name": "search_customers",
+          "original_tokens": 67,
+          "compressed_tokens": 67,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_customer",
+          "original_tokens": 49,
+          "compressed_tokens": 46,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_customer",
+          "original_tokens": 78,
+          "compressed_tokens": 75,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_customer_metrics",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_support_metrics",
+          "original_tokens": 71,
+          "compressed_tokens": 71,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "Change the customer's email address",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.169,
+      "compression_latency_ms": 0.3138,
+      "total_pipeline_latency_ms": 18.4828,
+      "original_tokens": 316,
+      "compressed_tokens": 304,
+      "tokens_saved": 12,
+      "reduction_percent": 3.8,
+      "selected_tools": [
+        {
+          "tool_name": "update_customer_address",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_customer_address",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_customer",
+          "original_tokens": 78,
+          "compressed_tokens": 75,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_customers",
+          "original_tokens": 67,
+          "compressed_tokens": 67,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "delete_customer",
+          "original_tokens": 50,
+          "compressed_tokens": 47,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Find the customer with email john@example.com",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 19.3773,
+      "compression_latency_ms": 0.2883,
+      "total_pipeline_latency_ms": 19.6656,
+      "original_tokens": 290,
+      "compressed_tokens": 278,
+      "tokens_saved": 12,
+      "reduction_percent": 4.14,
+      "selected_tools": [
+        {
+          "tool_name": "search_customers",
+          "original_tokens": 67,
+          "compressed_tokens": 67,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_customer_address",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_customer_orders",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_customer",
+          "original_tokens": 49,
+          "compressed_tokens": 46,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_customer_address",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "What address does customer C100 have saved?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 20.8852,
+      "compression_latency_ms": 0.3169,
+      "total_pipeline_latency_ms": 21.2021,
+      "original_tokens": 334,
+      "compressed_tokens": 323,
+      "tokens_saved": 11,
+      "reduction_percent": 3.29,
+      "selected_tools": [
+        {
+          "tool_name": "get_customer_address",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_customer_address",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_customers",
+          "original_tokens": 67,
+          "compressed_tokens": 67,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "update_customer",
+          "original_tokens": 78,
+          "compressed_tokens": 75,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_shipping_address",
+          "original_tokens": 68,
+          "compressed_tokens": 66,
+          "tokens_saved": 2
+        }
+      ]
+    },
+    {
+      "query": "Charge the customer's card for 150 dollars",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.1679,
+      "compression_latency_ms": 0.5522,
+      "total_pipeline_latency_ms": 18.7201,
+      "original_tokens": 354,
+      "compressed_tokens": 336,
+      "tokens_saved": 18,
+      "reduction_percent": 5.08,
+      "selected_tools": [
+        {
+          "tool_name": "charge_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "create_payment_method",
+          "original_tokens": 73,
+          "compressed_tokens": 70,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "remove_payment_method",
+          "original_tokens": 77,
+          "compressed_tokens": 71,
+          "tokens_saved": 6
+        },
+        {
+          "tool_name": "update_customer_address",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "refund_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Has payment P500 been completed?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 21.5306,
+      "compression_latency_ms": 0.2896,
+      "total_pipeline_latency_ms": 21.8202,
+      "original_tokens": 298,
+      "compressed_tokens": 283,
+      "tokens_saved": 15,
+      "reduction_percent": 5.03,
+      "selected_tools": [
+        {
+          "tool_name": "verify_payment",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_payment_status",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_payment",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "refund_payment",
+          "original_tokens": 68,
+          "compressed_tokens": 65,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "create_payment_method",
+          "original_tokens": 73,
+          "compressed_tokens": 70,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Where is my package right now?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 17.7673,
+      "compression_latency_ms": 0.1597,
+      "total_pipeline_latency_ms": 17.927,
+      "original_tokens": 280,
+      "compressed_tokens": 268,
+      "tokens_saved": 12,
+      "reduction_percent": 4.29,
+      "selected_tools": [
+        {
+          "tool_name": "mark_shipment_delivered",
+          "original_tokens": 53,
+          "compressed_tokens": 51,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "get_shipment",
+          "original_tokens": 52,
+          "compressed_tokens": 50,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "list_shipments",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_shipping_address",
+          "original_tokens": 68,
+          "compressed_tokens": 66,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "get_inventory_location",
+          "original_tokens": 55,
+          "compressed_tokens": 52,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Track shipment TRK123456",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.3646,
+      "compression_latency_ms": 0.1645,
+      "total_pipeline_latency_ms": 16.5291,
+      "original_tokens": 293,
+      "compressed_tokens": 284,
+      "tokens_saved": 9,
+      "reduction_percent": 3.07,
+      "selected_tools": [
+        {
+          "tool_name": "track_shipment",
+          "original_tokens": 53,
+          "compressed_tokens": 53,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "mark_shipment_delivered",
+          "original_tokens": 53,
+          "compressed_tokens": 51,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "get_shipment",
+          "original_tokens": 52,
+          "compressed_tokens": 50,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "update_shipping_address",
+          "original_tokens": 68,
+          "compressed_tokens": 66,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "create_shipment",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "How much will shipping cost for this package?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.9578,
+      "compression_latency_ms": 0.1668,
+      "total_pipeline_latency_ms": 17.1246,
+      "original_tokens": 288,
+      "compressed_tokens": 278,
+      "tokens_saved": 10,
+      "reduction_percent": 3.47,
+      "selected_tools": [
+        {
+          "tool_name": "get_shipping_rate",
+          "original_tokens": 64,
+          "compressed_tokens": 64,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "mark_shipment_delivered",
+          "original_tokens": 53,
+          "compressed_tokens": 51,
+          "tokens_saved": 2
+        },
+        {
+          "tool_name": "list_shipments",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "create_shipment",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_shipment",
+          "original_tokens": 52,
+          "compressed_tokens": 50,
+          "tokens_saved": 2
+        }
+      ]
+    },
+    {
+      "query": "Create a support ticket because my order arrived damaged",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 24.0912,
+      "compression_latency_ms": 0.1808,
+      "total_pipeline_latency_ms": 24.272,
+      "original_tokens": 324,
+      "compressed_tokens": 321,
+      "tokens_saved": 3,
+      "reduction_percent": 0.93,
+      "selected_tools": [
+        {
+          "tool_name": "create_ticket",
+          "original_tokens": 84,
+          "compressed_tokens": 81,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_ticket",
+          "original_tokens": 52,
+          "compressed_tokens": 52,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "update_ticket",
+          "original_tokens": 64,
+          "compressed_tokens": 64,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "assign_ticket",
+          "original_tokens": 73,
+          "compressed_tokens": 73,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "close_ticket",
+          "original_tokens": 51,
+          "compressed_tokens": 51,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "Show me support ticket T100",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 15.9256,
+      "compression_latency_ms": 0.1795,
+      "total_pipeline_latency_ms": 16.1051,
+      "original_tokens": 322,
+      "compressed_tokens": 319,
+      "tokens_saved": 3,
+      "reduction_percent": 0.93,
+      "selected_tools": [
+        {
+          "tool_name": "create_ticket",
+          "original_tokens": 84,
+          "compressed_tokens": 81,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_ticket",
+          "original_tokens": 52,
+          "compressed_tokens": 52,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "update_ticket",
+          "original_tokens": 64,
+          "compressed_tokens": 64,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "assign_ticket",
+          "original_tokens": 73,
+          "compressed_tokens": 73,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "search_tickets",
+          "original_tokens": 49,
+          "compressed_tokens": 49,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "Send an email to john@example.com",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.432,
+      "compression_latency_ms": 0.2057,
+      "total_pipeline_latency_ms": 16.6377,
+      "original_tokens": 340,
+      "compressed_tokens": 332,
+      "tokens_saved": 8,
+      "reduction_percent": 2.35,
+      "selected_tools": [
+        {
+          "tool_name": "send_email",
+          "original_tokens": 81,
+          "compressed_tokens": 81,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "send_invoice",
+          "original_tokens": 69,
+          "compressed_tokens": 66,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "reply_to_email",
+          "original_tokens": 70,
+          "compressed_tokens": 70,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "mark_email_read",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_shipping_address",
+          "original_tokens": 68,
+          "compressed_tokens": 66,
+          "tokens_saved": 2
+        }
+      ]
+    },
+    {
+      "query": "Find emails about my recent order",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 17.4949,
+      "compression_latency_ms": 0.2908,
+      "total_pipeline_latency_ms": 17.7857,
+      "original_tokens": 291,
+      "compressed_tokens": 270,
+      "tokens_saved": 21,
+      "reduction_percent": 7.22,
+      "selected_tools": [
+        {
+          "tool_name": "get_order",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_customer_orders",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_order_items",
+          "original_tokens": 55,
+          "compressed_tokens": 52,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "search_orders",
+          "original_tokens": 81,
+          "compressed_tokens": 72,
+          "tokens_saved": 9
+        },
+        {
+          "tool_name": "get_email",
+          "original_tokens": 50,
+          "compressed_tokens": 47,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Schedule a meeting for tomorrow",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 19.7353,
+      "compression_latency_ms": 0.174,
+      "total_pipeline_latency_ms": 19.9093,
+      "original_tokens": 336,
+      "compressed_tokens": 333,
+      "tokens_saved": 3,
+      "reduction_percent": 0.89,
+      "selected_tools": [
+        {
+          "tool_name": "find_available_time",
+          "original_tokens": 54,
+          "compressed_tokens": 54,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "list_events",
+          "original_tokens": 72,
+          "compressed_tokens": 72,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "add_event_attendee",
+          "original_tokens": 73,
+          "compressed_tokens": 70,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_event",
+          "original_tokens": 51,
+          "compressed_tokens": 51,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "create_event",
+          "original_tokens": 86,
+          "compressed_tokens": 86,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "Cancel my calendar meeting",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.5513,
+      "compression_latency_ms": 0.194,
+      "total_pipeline_latency_ms": 16.7453,
+      "original_tokens": 336,
+      "compressed_tokens": 324,
+      "tokens_saved": 12,
+      "reduction_percent": 3.57,
+      "selected_tools": [
+        {
+          "tool_name": "cancel_event",
+          "original_tokens": 51,
+          "compressed_tokens": 51,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "add_event_attendee",
+          "original_tokens": 73,
+          "compressed_tokens": 70,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_order",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "cancel_invoice",
+          "original_tokens": 66,
+          "compressed_tokens": 63,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_event",
+          "original_tokens": 79,
+          "compressed_tokens": 76,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Create a new sales lead for John",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.7642,
+      "compression_latency_ms": 0.1793,
+      "total_pipeline_latency_ms": 16.9435,
+      "original_tokens": 319,
+      "compressed_tokens": 304,
+      "tokens_saved": 15,
+      "reduction_percent": 4.7,
+      "selected_tools": [
+        {
+          "tool_name": "create_lead",
+          "original_tokens": 66,
+          "compressed_tokens": 66,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "update_lead",
+          "original_tokens": 65,
+          "compressed_tokens": 62,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_lead",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "delete_lead",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "create_order",
+          "original_tokens": 86,
+          "compressed_tokens": 80,
+          "tokens_saved": 6
+        }
+      ]
+    },
+    {
+      "query": "Reset the password for user U100",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 21.9348,
+      "compression_latency_ms": 0.4407,
+      "total_pipeline_latency_ms": 22.3755,
+      "original_tokens": 288,
+      "compressed_tokens": 273,
+      "tokens_saved": 15,
+      "reduction_percent": 5.21,
+      "selected_tools": [
+        {
+          "tool_name": "reset_password",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "delete_user",
+          "original_tokens": 50,
+          "compressed_tokens": 47,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "update_user",
+          "original_tokens": 65,
+          "compressed_tokens": 62,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "disable_user",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "verify_user",
+          "original_tokens": 54,
+          "compressed_tokens": 51,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "How much revenue did we make this month?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 20.5883,
+      "compression_latency_ms": 0.3095,
+      "total_pipeline_latency_ms": 20.8978,
+      "original_tokens": 342,
+      "compressed_tokens": 339,
+      "tokens_saved": 3,
+      "reduction_percent": 0.88,
+      "selected_tools": [
+        {
+          "tool_name": "get_revenue_report",
+          "original_tokens": 75,
+          "compressed_tokens": 75,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_payment_metrics",
+          "original_tokens": 70,
+          "compressed_tokens": 70,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_refund_metrics",
+          "original_tokens": 72,
+          "compressed_tokens": 72,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_inventory_metrics",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_sales_report",
+          "original_tokens": 74,
+          "compressed_tokens": 74,
+          "tokens_saved": 0
+        }
+      ]
+    },
+    {
+      "query": "How many products are currently available?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 18.1924,
+      "compression_latency_ms": 0.2598,
+      "total_pipeline_latency_ms": 18.4522,
+      "original_tokens": 260,
+      "compressed_tokens": 251,
+      "tokens_saved": 9,
+      "reduction_percent": 3.46,
+      "selected_tools": [
+        {
+          "tool_name": "list_products",
+          "original_tokens": 51,
+          "compressed_tokens": 51,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "list_low_stock_products",
+          "original_tokens": 52,
+          "compressed_tokens": 52,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "check_inventory",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_product",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_product_price",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Is product P100 in stock?",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 16.4006,
+      "compression_latency_ms": 0.1637,
+      "total_pipeline_latency_ms": 16.5643,
+      "original_tokens": 292,
+      "compressed_tokens": 280,
+      "tokens_saved": 12,
+      "reduction_percent": 4.11,
+      "selected_tools": [
+        {
+          "tool_name": "update_inventory",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "list_low_stock_products",
+          "original_tokens": 52,
+          "compressed_tokens": 52,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "check_inventory",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_product_price",
+          "original_tokens": 53,
+          "compressed_tokens": 50,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "release_inventory",
+          "original_tokens": 67,
+          "compressed_tokens": 64,
+          "tokens_saved": 3
+        }
+      ]
+    },
+    {
+      "query": "Show me sales performance for the last month",
+      "selected_tool_count": 5,
+      "retrieval_latency_ms": 19.3045,
+      "compression_latency_ms": 0.6466,
+      "total_pipeline_latency_ms": 19.9511,
+      "original_tokens": 322,
+      "compressed_tokens": 316,
+      "tokens_saved": 6,
+      "reduction_percent": 1.86,
+      "selected_tools": [
+        {
+          "tool_name": "get_sales_report",
+          "original_tokens": 74,
+          "compressed_tokens": 74,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_revenue_report",
+          "original_tokens": 75,
+          "compressed_tokens": 75,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_product_metrics",
+          "original_tokens": 52,
+          "compressed_tokens": 49,
+          "tokens_saved": 3
+        },
+        {
+          "tool_name": "get_order_metrics",
+          "original_tokens": 70,
+          "compressed_tokens": 70,
+          "tokens_saved": 0
+        },
+        {
+          "tool_name": "get_inventory_metrics",
+          "original_tokens": 51,
+          "compressed_tokens": 48,
+          "tokens_saved": 3
+        }
+      ]
+    }
+  ]
+}
