@@ -1,0 +1,140 @@
+{
+  "total_tools": 117,
+  "server_stats": [
+    {
+      "server": "sqlite",
+      "tier": "python",
+      "tools": 6,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "sentry",
+      "tier": "python",
+      "tools": 1,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "time",
+      "tier": "python",
+      "tools": 2,
+      "flags": 0,
+      "commit": "bbb701e7ac1e57f3edd1c2836b94c5457eaf7b9c"
+    },
+    {
+      "server": "git-archived",
+      "tier": "python",
+      "tools": 12,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "fetch",
+      "tier": "python",
+      "tools": 1,
+      "flags": 0,
+      "commit": "bbb701e7ac1e57f3edd1c2836b94c5457eaf7b9c"
+    },
+    {
+      "server": "slack",
+      "tier": "ts_literal",
+      "tools": 8,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "google-maps",
+      "tier": "ts_literal",
+      "tools": 7,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "puppeteer",
+      "tier": "ts_literal",
+      "tools": 7,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "brave-search",
+      "tier": "ts_literal",
+      "tools": 2,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "postgres",
+      "tier": "ts_literal",
+      "tools": 1,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "aws-kb",
+      "tier": "ts_literal",
+      "tools": 1,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "everart",
+      "tier": "ts_literal",
+      "tools": 1,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "gdrive",
+      "tier": "ts_literal",
+      "tools": 1,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "redis",
+      "tier": "ts_literal",
+      "tools": 4,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "github",
+      "tier": "ts_zod",
+      "tools": 26,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "gitlab",
+      "tier": "ts_zod",
+      "tools": 9,
+      "flags": 0,
+      "commit": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e"
+    },
+    {
+      "server": "memory",
+      "tier": "ts_zod",
+      "tools": 9,
+      "flags": 0,
+      "commit": "bbb701e7ac1e57f3edd1c2836b94c5457eaf7b9c"
+    },
+    {
+      "server": "everything",
+      "tier": "ts_zod",
+      "tools": 18,
+      "flags": 0,
+      "commit": "bbb701e7ac1e57f3edd1c2836b94c5457eaf7b9c"
+    },
+    {
+      "server": "sequentialthinking",
+      "tier": "ts_zod",
+      "tools": 1,
+      "flags": 0,
+      "commit": "bbb701e7ac1e57f3edd1c2836b94c5457eaf7b9c"
+    }
+  ],
+  "validation_errors": [],
+  "extraction_flags": []
+}
